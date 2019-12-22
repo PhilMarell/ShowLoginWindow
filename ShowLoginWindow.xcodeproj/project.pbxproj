@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AA87E2F23AF280B00BE761F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA87E2E23AF280B00BE761F /* AppDelegate.m */; };
-		4AA87E3123AF281C00BE761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA87E3023AF281C00BE761F /* Assets.xcassets */; };
-		4AA87E3423AF281C00BE761F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA87E3223AF281C00BE761F /* MainMenu.xib */; };
 		4AA87E3723AF281C00BE761F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA87E3623AF281C00BE761F /* main.m */; };
+		4AA87E4023AF284200BE761F /* login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA87E3F23AF284200BE761F /* login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AA87E2A23AF280B00BE761F /* ShowLoginWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowLoginWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA87E2D23AF280B00BE761F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4AA87E2E23AF280B00BE761F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4AA87E3023AF281C00BE761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AA87E3323AF281C00BE761F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4AA87E3523AF281C00BE761F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA87E3623AF281C00BE761F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4AA87E3823AF281C00BE761F /* ShowLoginWindow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShowLoginWindow.entitlements; sourceTree = "<group>"; };
+		4AA87E3F23AF284200BE761F /* login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = login.framework; path = ../../../../../../../System/Library/PrivateFrameworks/login.framework; sourceTree = "<group>"; };
+		4AA87E4423AF29D200BE761F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA87E4023AF284200BE761F /* login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +34,10 @@
 		4AA87E2123AF280B00BE761F = {
 			isa = PBXGroup;
 			children = (
+				4AA87E4423AF29D200BE761F /* README.md */,
 				4AA87E2C23AF280B00BE761F /* ShowLoginWindow */,
 				4AA87E2B23AF280B00BE761F /* Products */,
+				4AA87E3E23AF284200BE761F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,15 +52,18 @@
 		4AA87E2C23AF280B00BE761F /* ShowLoginWindow */ = {
 			isa = PBXGroup;
 			children = (
-				4AA87E2D23AF280B00BE761F /* AppDelegate.h */,
-				4AA87E2E23AF280B00BE761F /* AppDelegate.m */,
-				4AA87E3023AF281C00BE761F /* Assets.xcassets */,
-				4AA87E3223AF281C00BE761F /* MainMenu.xib */,
 				4AA87E3523AF281C00BE761F /* Info.plist */,
 				4AA87E3623AF281C00BE761F /* main.m */,
-				4AA87E3823AF281C00BE761F /* ShowLoginWindow.entitlements */,
 			);
 			path = ShowLoginWindow;
+			sourceTree = "<group>";
+		};
+		4AA87E3E23AF284200BE761F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA87E3F23AF284200BE761F /* login.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA87E3123AF281C00BE761F /* Assets.xcassets in Resources */,
-				4AA87E3423AF281C00BE761F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +134,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA87E3723AF281C00BE761F /* main.m in Sources */,
-				4AA87E2F23AF280B00BE761F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4AA87E3223AF281C00BE761F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AA87E3323AF281C00BE761F /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4AA87E3923AF281C00BE761F /* Debug */ = {
@@ -265,11 +252,10 @@
 		4AA87E3C23AF281C00BE761F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ShowLoginWindow/ShowLoginWindow.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = NN4X4XE2AA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ShowLoginWindow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -278,17 +264,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.philmarell.ShowLoginWindow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
 		4AA87E3D23AF281C00BE761F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ShowLoginWindow/ShowLoginWindow.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = NN4X4XE2AA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ShowLoginWindow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,6 +287,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.philmarell.ShowLoginWindow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};
